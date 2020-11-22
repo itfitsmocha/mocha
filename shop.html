@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ItFitsMocha</title>
+<link rel="shortcut icon" href="images/logo.png">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<img src="images/logo.png" alt=""/>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="index.html">Home</a></li>
+						    	<li class="current"><a href="shop.html">Gallery</a></li>
+								<li><a href="contact.html">Contact</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row shop_box-top">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe1.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe2.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe3.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe4.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe5.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe6.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe7.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe8.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe9.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe10.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe11.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe12.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe13.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe14.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe15.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe16.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe17.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe18.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe19.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe20.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe21.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe22.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe23.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe24.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe25.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe26.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe27.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe28.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe29.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe30.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe31.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe32.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe33.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe34.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe35.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe36.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe37.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe38.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe39.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe40.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe41.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe42.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe43.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe44.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe45.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe46.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe47.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe48.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe49.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe50.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe51.jpeg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-3 shop_box">
+					<img src="images/shoe52.jpeg" class="img-responsive" alt=""/>
+				</div>
+			</div>
+		 </div>
+	   </div>
+	  </div>
+</body>	
+</html>

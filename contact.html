@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ItFitsMocha</title>
+<link rel="shortcut icon" href="images/logo.png">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+ </head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<img src="images/logo.png" alt=""/>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="index.html">Home</a></li>
+						    	<li><a href="shop.html">Gallery</a></li>
+								<li class="current"><a href="contact.html">Contact</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+				  <div class="map">
+				  	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.366241927772!2d77.31112421510116!3d29.447314032103524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c2ec8e2f969a7%3A0x1bc19ec323a2acb8!2sShamli%2C%20Uttar%20Pradesh%20247776!5e0!3m2!1sen!2sin!4v1606032523076!5m2!1sen!2sin" width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+				
+				  </div>
+				</div>
+				<div class="col-md-5">
+					<div class="address">
+				                <p>Mandi Jawahar Ganj</p>
+						   		<p>Shamli UP</p>
+						   		<p>247776</p>
+				   		<p>Phone:(+91) 7078602222</p>
+				 	 	<p>Email: <span>mochashoe@gmail.com</span></p>
+				   		<p>Follow on: <a href="https://www.facebook.com/MOCHASHOES" target="_blank"><span>Facebook</span></a>, <a href="https://www.instagram.com/mocha_shoes_?r=nametag" target="_blank"><span>Instagram</span></a></p>
+				   </div>
+				</div>
+			</div>
+	     </div>
+	   </div>
+	  </div>
+</body>	
+</html>
